@@ -1,5 +1,8 @@
 import 'dart:math' as math;
-import 'package:flutter/foundation.dart';
+
+double degreesToRadians(degrees) {
+  return ((degrees ?? 0) * (math.pi / 180) * -1);
+}
 
 double _radians(n) {
   return n * (math.pi / 180);
@@ -27,7 +30,6 @@ double getBearing(startLat, startLon, endLat, endLon) {
   }
 
   var bearing = (_degrees(math.atan2(dLong, dPhi)) + 360.0) % 360.0;
-  debugPrint('bearing is: $bearing');
 
   return bearing;
 }
