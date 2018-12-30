@@ -38,7 +38,8 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/compass.png
+  - assets/cp-red.png
+  - assets/cp-simple-white.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
