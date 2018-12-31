@@ -36,7 +36,9 @@ class CompassState extends State<Compass> {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
+    return new Material(
+        child: Container(
+            child: GestureDetector(
       onTap: _rotate,
       child: AnimatedTransform(
         duration: const Duration(seconds: 1),
@@ -44,7 +46,7 @@ class CompassState extends State<Compass> {
         transform: Matrix4.rotationZ(rad),
         child: new Image.asset('assets/cp-red.png'),
       ),
-    );
+    )));
   }
 
   void _rotate() {

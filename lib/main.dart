@@ -52,11 +52,11 @@ class _WITWAppState extends State<WITWApp> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Animation Demo',
+      title: '...where in the world?',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new LandingView(title: "Animation Main Page"),
+      home: new LandingView(),
     );
   }
 }
