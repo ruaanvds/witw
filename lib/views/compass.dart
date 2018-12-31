@@ -4,21 +4,21 @@ import 'package:witw/services/geo.dart';
 import 'dart:math' as math;
 import 'package:witw/services/animated-transform.dart';
 
-class RotationExample extends StatefulWidget {
+class Compass extends StatefulWidget {
   final Widget child;
 
-  const RotationExample({
+  const Compass({
     Key key,
     this.child,
   }) : super(key: key);
 
   @override
-  RotationExampleState createState() {
-    return new RotationExampleState();
+  CompassState createState() {
+    return new CompassState();
   }
 }
 
-class RotationExampleState extends State<RotationExample> {
+class CompassState extends State<Compass> {
   final _random = math.Random();
   double rad = 0.0;
 
@@ -28,7 +28,7 @@ class RotationExampleState extends State<RotationExample> {
 
     FlutterCompass.events.listen((double direction) {
       setState(() {
-        rad = degreesToRadians(direction - 180);
+        rad = degreesToRadians(direction);
       });
       //getBearing(-33.344921, 18.161560, 51.5007292, -0.1246254);
     });

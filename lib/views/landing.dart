@@ -24,7 +24,7 @@ class LandingView extends StatelessWidget {
       onPressed: () {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => RotationExample()),
+          MaterialPageRoute(builder: (context) => Compass()),
         );
       },
     );
