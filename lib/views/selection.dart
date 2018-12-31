@@ -9,7 +9,7 @@ class SelectionView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget logo = Image.asset(
-      'assets/cp-red.png',
+      'assets/img/cp-red.png',
       width: 100.0,
       height: 100.0,
     );

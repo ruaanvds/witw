@@ -44,7 +44,7 @@ class LandingViewState extends State<LandingView> {
           duration: Duration(milliseconds: 500),
           // The green box needs to be the child of the AnimatedOpacity
           child: Image.asset(
-            'assets/cp-red.png',
+            'assets/img/cp-red.png',
             width: 200.0,
             height: 200.0,
           )),

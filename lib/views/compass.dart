@@ -44,7 +44,7 @@ class CompassState extends State<Compass> {
         duration: const Duration(seconds: 1),
         alignment: Alignment.center,
         transform: Matrix4.rotationZ(rad),
-        child: new Image.asset('assets/cp-red.png'),
+        child: new Image.asset('assets/img/cp-red-notches.png'),
       ),
     )));
   }
